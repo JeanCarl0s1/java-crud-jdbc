@@ -1,0 +1,15 @@
+## En caso de no poder ejecutar la base de datos desde el archivo sql
+
+create database dbempleados;
+use dbempleados;
+
+create table empleados (
+    id int not null auto_increment primary key,
+    identificacion int not null,
+    nombre varchar(50) not null,
+    rol varchar(20) not null
+);
+
+insert into empleados (identificacion, nombre, rol) values (12345, "jean carlos ord", "desarrollador");
+
+select * from empleados;
